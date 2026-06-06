@@ -5,7 +5,17 @@ export const STORAGE_KEY = 'promptara_v2';
 export const INITIAL_DATA = {
   loggedInUserId: null,
   activeBoardId: null,
-  users: [],
+  users: [
+    {
+      id: 'hardcoded-admin',
+      name: 'Admin Promptara',
+      email: 'admin@promptara.id',
+      password: 'admin',
+      role: 'Owner',
+      initials: 'AP',
+      color: '#3EB8B8'
+    }
+  ],
   boards: [],
   columns: [
     { id: 'col1', name: 'Briefs',    color: '#6366F1', order: 0 },
