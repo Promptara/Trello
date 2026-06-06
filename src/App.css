@@ -1,0 +1,46 @@
+/* PROMPTARA — App-specific Styles */
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D4D3E0; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #B5B3C8; }
+
+/* Inputs focus */
+input:focus, textarea:focus, select:focus {
+  border-color: #4B6BFB !important;
+  box-shadow: 0 0 0 3px rgba(75,107,251,0.12);
+}
+
+/* Table row hover smooth */
+tr { transition: background .12s; }
+
+/* Date input */
+input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0.5; cursor: pointer; }
+
+/* Number input arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+input[type="number"] { -moz-appearance: textfield; }
+
+/* Drag ghost */
+[draggable="true"] { -webkit-user-drag: element; }
+
+/* Smooth everything */
+button, input, select, textarea { transition: border-color .15s, box-shadow .15s; }
+
+/* Space starfield */
+@keyframes twinkle {
+  0%,100% { opacity: var(--so, 0.6); transform: scale(1); }
+  50%      { opacity: calc(var(--so, 0.6) * 0.12); transform: scale(0.75); }
+}
+@keyframes slowdrift {
+  0%   { transform: translateY(0px) translateX(0px); }
+  33%  { transform: translateY(-3px) translateX(1.5px); }
+  66%  { transform: translateY(1.5px) translateX(-2px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Gantt / Calendar */
+.gantt-row:hover { background: #F0EFF8 !important; }
+.cal-day:hover   { border-color: #3EB8B8 !important; }
