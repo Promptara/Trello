@@ -1,4 +1,4 @@
-import { PROJECT_TYPES } from '../../constants';
+import { PROJECT_TYPES } from '../../../constants';
 
 const TypeBadge = ({ type, small }) => {
   const t = PROJECT_TYPES[type] || PROJECT_TYPES.other;

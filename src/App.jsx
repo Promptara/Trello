@@ -1,7 +1,7 @@
 // PROMPTARA — Root App Component
 import { useState } from 'react';
 import { AppContext, useAppState } from './context/AppContext';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/layout/Sidebar';
 import AuthScreen from './pages/AuthScreen';
 import BoardView from './pages/BoardView';
 import CalendarView from './pages/CalendarView';

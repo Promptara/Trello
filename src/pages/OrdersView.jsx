@@ -3,12 +3,12 @@ import { useState, useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { PROJECT_TYPES } from '../constants';
 import { formatIDR, formatDate, formatDateShort, isOverdue } from '../utils/formatters';
-import Icon from '../components/ui/Icon';
-import TypeBadge from '../components/ui/TypeBadge';
-import Avatar from '../components/ui/Avatar';
-import Btn from '../components/ui/Btn';
-import Modal from '../components/ui/Modal';
-import CardModal from '../components/CardModal';
+import Icon from '../components/common/ui/Icon';
+import TypeBadge from '../components/common/ui/TypeBadge';
+import Avatar from '../components/common/ui/Avatar';
+import Btn from '../components/common/ui/Btn';
+import Modal from '../components/common/ui/Modal';
+import CardModal from '../components/features/CardModal';
 
 const OrdersView = () => {
   const { data } = useContext(AppContext);

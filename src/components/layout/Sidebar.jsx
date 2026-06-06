@@ -1,9 +1,9 @@
 // PROMPTARA — Sidebar, NotifPanel, AddBoardForm
 import { useState, useContext, useRef, useEffect } from 'react';
-import { AppContext } from '../context/AppContext';
-import { genId } from '../utils/storage';
-import { formatDate } from '../utils/formatters';
-import Icon from './ui/Icon';
+import { AppContext } from '../../context/AppContext';
+import { genId } from '../../utils/storage';
+import { formatDate } from '../../utils/formatters';
+import Icon from '../common/ui/Icon';
 
 /* ── Notification Panel ─────────────────────────────── */
 const NotifPanel = () => {

@@ -1,4 +1,4 @@
-import { ICON_PATHS } from '../../constants';
+import { ICON_PATHS } from '../../../constants';
 
 const Icon = ({ name, size = 18, color = 'currentColor', strokeWidth = 1.8 }) => (
   <svg

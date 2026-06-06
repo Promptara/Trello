@@ -2,9 +2,9 @@
 import { useState, useContext, useRef, useEffect } from 'react';
 import { AppContext } from '../context/AppContext';
 import { formatDate, formatDateShort } from '../utils/formatters';
-import Icon from '../components/ui/Icon';
-import Modal from '../components/ui/Modal';
-import CardModal from '../components/CardModal';
+import Icon from '../components/common/ui/Icon';
+import Modal from '../components/common/ui/Modal';
+import CardModal from '../components/features/CardModal';
 
 /* ── Gantt Timeline ──────────────────────────────────── */
 const GanttTimeline = ({ cards }) => {

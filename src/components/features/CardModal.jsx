@@ -1,15 +1,15 @@
 // PROMPTARA — Card Detail / Edit Modal
 import { useState, useContext } from 'react';
-import { AppContext } from '../context/AppContext';
-import { PROJECT_TYPES, PRIORITY } from '../constants';
-import { genId } from '../utils/storage';
-import { formatIDR, formatDate, isOverdue } from '../utils/formatters';
-import Icon from './ui/Icon';
-import TypeBadge from './ui/TypeBadge';
-import PriorityPill from './ui/PriorityPill';
-import Btn from './ui/Btn';
-import Input from './ui/Input';
-import Select from './ui/Select';
+import { AppContext } from '../../context/AppContext';
+import { PROJECT_TYPES, PRIORITY } from '../../constants';
+import { genId } from '../../utils/storage';
+import { formatIDR, formatDate, isOverdue } from '../../utils/formatters';
+import Icon from '../common/ui/Icon';
+import TypeBadge from '../common/ui/TypeBadge';
+import PriorityPill from '../common/ui/PriorityPill';
+import Btn from '../common/ui/Btn';
+import Input from '../common/ui/Input';
+import Select from '../common/ui/Select';
 
 const CardModal = ({ cardId, defaultColumnId, onClose, isNew }) => {
   const { data, dispatch } = useContext(AppContext);

@@ -3,8 +3,8 @@ import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { PROJECT_TYPES } from '../constants';
 import { formatIDR, formatDate } from '../utils/formatters';
-import Icon from '../components/ui/Icon';
-import Btn from '../components/ui/Btn';
+import Icon from '../components/common/ui/Icon';
+import Btn from '../components/common/ui/Btn';
 
 const FinanceView = () => {
   const { data } = useContext(AppContext);

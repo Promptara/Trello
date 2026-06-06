@@ -2,8 +2,8 @@
 import { useState, useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { genId } from '../utils/storage';
-import Icon from '../components/ui/Icon';
-import SpaceField from '../components/SpaceField';
+import Icon from '../components/common/ui/Icon';
+import SpaceField from '../components/common/SpaceField';
 
 const AuthScreen = ({ onLogin }) => {
   const [tab, setTab] = useState('login');

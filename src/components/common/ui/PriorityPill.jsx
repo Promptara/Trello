@@ -1,4 +1,4 @@
-import { PRIORITY } from '../../constants';
+import { PRIORITY } from '../../../constants';
 
 const PriorityPill = ({ priority, small }) => {
   const p = PRIORITY[priority] || PRIORITY.low;

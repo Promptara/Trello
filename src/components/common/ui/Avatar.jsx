@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+import { AppContext } from '../../../context/AppContext';
 
 const Avatar = ({ userId, size = 28, showRing = false }) => {
   const { data } = useContext(AppContext);
